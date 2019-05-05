@@ -1,0 +1,91 @@
+<!-- ne pas modifier le html et le head -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Exercice4jQuery4</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h2>Header</h2>
+  </header>
+  <!-- START Bootstrap-Cookie-Alert -->
+  <!-- container de la page pour mise en forme bootstrap, ne pas toucher -->
+  <nav class="navbar navbar-light justify-content-center">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#!">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!">Link</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">jQuery - Exercice 4 :</h1>
+        <p class="lead">Créer un formulaire demandant le nom, le prénom, la date de naissance, le lieu de naissance, l'emploi et la société. Créer un bouton "Générer" permettant de créer une courte phrase de présentation.</p>
+        <hr class="my-2">
+        <ul>
+          <li>Exemple : Si les données saisies sont : "Jérôme OTT, 5/06/1990, Margny-lès-Compiègne, Formateur, Novei", la phrase de présentation sera : "Jérôme OTT, né le 5/06/1990 à Margny-lès-Compiègne, actuellement Formateur à Novei</li>
+        </ul>
+      </div>
+      <h1 class="text-center font-weight-bolder mb-4">Formulaire</h1>
+        <!-- c'est TRES IMPORTANT le NONVALIDATE pentru a verifica cu CSS daca campurile au fost completate conform cerintelor din HTML -->
+       <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="formGroupExampleInput">Prénom</label>
+              <input type="text" class="form-control" id="firstName" placeholder="John">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="formGroupExampleInput2">Nom</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Doe">
+             </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="formGroupExampleInput">Date de naissance</label>
+              <input type="date" class="form-control" id="dateOfBirth" placeholder="23/06/1974">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="formGroupExampleInput2">Lieu de naissance</label>
+              <input type="text" class="form-control" id="placeOfBirth" placeholder="Paris">
+             </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">L'emploi</label>
+            <input type="text" class="form-control" id="job" placeholder="Chargé d'études">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Société</label>
+            <input type="text" class="form-control" id="society" placeholder="Sociéte">
+          </div>
+          <button type="submit" class="btn btn-primary">Générer</button>
+        </form>
+    </div>
+  </main>
+  <footer>
+    <p>Footer</p>
+  </footer>
+  <!-- scripts boostrap -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="assets/js/main.js"></script> <!--  mon script js perso -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
